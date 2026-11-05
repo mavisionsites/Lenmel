@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const originalHTML = submitBtn.innerHTML;
     submitBtn.classList.add('is-sent');
     submitBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg><span>Abrindo o WhatsApp...</span>';
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${mensagem}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${mensagem}`, '_blank', 'noopener');
     setTimeout(() => { submitBtn.classList.remove('is-sent'); submitBtn.innerHTML = originalHTML; }, 2600);
   });
 

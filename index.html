@@ -59,12 +59,12 @@
   </header>
 
   <div class="mobile-nav" id="mobile-nav">
-    <a href="#inicio" class="nav-link" style="--i:0">Início</a>
-    <a href="solucoes.html" class="nav-link" style="--i:1">Soluções</a>
-    <a href="#metodo" class="nav-link" style="--i:2">Método</a>
-    <a href="#resultados" class="nav-link" style="--i:3">Resultados</a>
-    <a href="#sobre" class="nav-link" style="--i:4">Sobre</a>
-    <a href="#contato" class="btn btn-primary mobile-cta js-open-specialist" style="--i:5">Fale com um especialista</a>
+    <a href="#inicio" class="nav-link">Início</a>
+    <a href="solucoes.html" class="nav-link">Soluções</a>
+    <a href="#metodo" class="nav-link">Método</a>
+    <a href="#resultados" class="nav-link">Resultados</a>
+    <a href="#sobre" class="nav-link">Sobre</a>
+    <a href="#contato" class="btn btn-primary mobile-cta js-open-specialist">Fale com um especialista</a>
   </div>
   <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
 
@@ -475,12 +475,12 @@
             <h3>Conte seu desafio</h3>
             <p class="contact-form-sub">Retorno em até 1 dia útil, pelo WhatsApp.</p>
             <div class="form-row">
-              <div class="form-field"><label for="field-nome">Nome *</label><input type="text" id="field-nome" name="nome" placeholder="Seu nome" required></div>
-              <div class="form-field"><label for="field-empresa">Empresa</label><input type="text" id="field-empresa" name="empresa" placeholder="Nome da empresa"></div>
+              <div class="form-field"><label for="field-nome">Nome *</label><input type="text" id="field-nome" name="nome" maxlength="100" autocomplete="name" placeholder="Seu nome" required></div>
+              <div class="form-field"><label for="field-empresa">Empresa</label><input type="text" id="field-empresa" name="empresa" maxlength="120" autocomplete="organization" placeholder="Nome da empresa"></div>
             </div>
             <div class="form-row">
-              <div class="form-field"><label for="field-email">E-mail *</label><input type="email" id="field-email" name="email" placeholder="voce@empresa.com.br" required></div>
-              <div class="form-field"><label for="field-whatsapp">WhatsApp</label><input type="tel" id="field-whatsapp" name="whatsapp" placeholder="(00) 00000-0000"></div>
+              <div class="form-field"><label for="field-email">E-mail *</label><input type="email" id="field-email" name="email" maxlength="120" autocomplete="email" placeholder="voce@empresa.com.br" required></div>
+              <div class="form-field"><label for="field-whatsapp">WhatsApp</label><input type="tel" id="field-whatsapp" name="whatsapp" maxlength="20" autocomplete="tel" placeholder="(00) 00000-0000"></div>
             </div>
             <div class="form-field"><label for="field-area">Área de interesse</label>
               <select id="field-area" name="area">
@@ -490,7 +490,7 @@
                 <option>Reforma Tributária</option>
                 <option>Outro assunto</option>
               </select></div>
-            <div class="form-field"><label for="field-desafio">Principal desafio *</label><textarea id="field-desafio" name="desafio" rows="4" placeholder="Ex.: os custos crescem sem a gente saber onde está o problema..." required></textarea></div>
+            <div class="form-field"><label for="field-desafio">Principal desafio *</label><textarea id="field-desafio" name="desafio" maxlength="1500" rows="4" placeholder="Ex.: os custos crescem sem a gente saber onde está o problema..." required></textarea></div>
             <button type="submit" class="btn btn-primary form-submit">
               <svg viewBox="0 0 24 24"><path d="m3 11 18-8-8 18-2-8Z" /></svg>
               Quero falar com um especialista
