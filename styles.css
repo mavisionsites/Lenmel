@@ -475,7 +475,21 @@ input, textarea { font-family: inherit; font-size: 1rem; }
 .why-row p { color: var(--gray-600); font-size: .95rem; max-width: 60ch; }
 
 /* ---------------- 10. SOBRE / EQUIPE ---------------- */
-.team-solo { max-width: 580px; margin: 0 auto; }
+.team-solo { max-width: 920px; margin: 0 auto; }
+.founder-card { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 56px; padding: 48px 56px; background: var(--black-card); border: 1px solid rgba(255,255,255,.08); clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%); }
+.founder-quote { position: relative; padding-left: 52px; }
+.founder-quote::before { content: '\201C'; position: absolute; left: 0; top: -14px; font-family: var(--font-display); font-size: 5rem; line-height: 1; color: var(--red); }
+.founder-quote p { font-family: var(--font-display); font-size: clamp(1.35rem, 2.4vw, 1.9rem); line-height: 1.35; color: var(--white); }
+.founder-quote p::after { content: '\201D'; color: var(--red); margin-left: 4px; }
+.founder-profile { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; min-width: 220px; }
+.founder-photo { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; border: 3px solid rgba(227,11,46,.6); }
+.founder-name { font-family: var(--font-display); font-size: 1.2rem; color: var(--white); }
+.founder-role { font-size: .84rem; color: var(--red-light); font-weight: 600; }
+.founder-profile .team-social { margin-top: 10px; }
+@media (max-width: 760px) {
+  .founder-card { grid-template-columns: 1fr; gap: 32px; padding: 36px 28px; }
+  .founder-profile { order: -1; }
+}
 .team-card {
   background: var(--black-card); border: 1px solid rgba(255,255,255,.08); padding: 34px;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
