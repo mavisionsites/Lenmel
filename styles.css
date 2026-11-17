@@ -764,5 +764,6 @@ body.modal-open { overflow: hidden; }
 .wa-float:hover { transform: scale(1.08); }
 .wa-float svg { width: 26px; height: 26px; }
 .icon-wa { fill: currentColor; stroke: none; }
-.footer-legal { padding: 18px 28px 0; color: #8E8D95; font-size: .82rem; }
+.footer-legal { padding: 26px 0 0; color: var(--gray-400); font-size: .82rem; }
+.footer-legal + .footer-bottom { padding-top: 8px; }
 .footer-bottom a:hover { color: var(--white); }
